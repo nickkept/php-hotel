@@ -68,7 +68,7 @@ $hotels = [
                 echo "<tr>";
                 echo "<td>{$hotel['name']}</td>";
                 echo "<td>{$hotel['description']}</td>";
-                echo "<td>{$hotel['parking']}</td>";
+                echo "<td> " . ($hotel['parking']  ? 'Yes' : 'No') . "</td>";
                 echo "<td>{$hotel['vote']} <i class='fa-solid fa-star'></i></td>";
                 echo "<td>{$hotel['distance_to_center']} km</td>";
                 echo "</tr>";
